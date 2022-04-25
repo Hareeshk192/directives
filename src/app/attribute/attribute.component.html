@@ -1,0 +1,8 @@
+<h2> Attribute Directives</h2>
+<p> Attribute directives listen to and modify the behavior of other HTML elements, 
+    attributes, properties, and components.</p>
+<h3> ngStyle</h3>
+<p [ngStyle]="{ 'background-color': style1?'red':(style2?'black':null), color:'#76D7EA', padding:'5px'} ">
+    if style1==true, red else if style2==true,blue
+</p>
+<p [ngClass]="{ 'box color':true}"> ng class styling</p>

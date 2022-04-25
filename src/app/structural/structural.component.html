@@ -1,0 +1,22 @@
+<p> Structural directives are responsible for HTML layout. 
+They shape or reshape the DOM's structure, typically by adding, removing, 
+and manipulating the host elements to which they are attached.
+</p> 
+<h3>
+    ngIf
+</h3>
+<p> ngIf is used to remove or add element to DOM. if condition is true this element
+    will be added else will not be added at DOM. ex- toggle button.
+</p>
+<button type="submit" (click)="toggleit()" >Toggle button</button>
+<p *ngIf="toggle"> result after toggling button</p>
+
+<p *ngIf="el1;else el2">el1 is true; </p>
+<ng-template #el2>
+<p #el2> el2 is true;</p>
+</ng-template>
+<h3>
+    ngFor
+</h3>
+<p>ngFor is used to apply loop on an element.</p>
+<p *ngFor="let item of items,let i=index">{{i}}- {{item}}</p>
